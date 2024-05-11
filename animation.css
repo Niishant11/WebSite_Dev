@@ -1,0 +1,84 @@
+
+/* logo animation */
+@keyframes slideright{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+   100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+/* nav optin animation */
+@keyframes slidedown{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+   100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+   100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+/* about Btn */
+@media (min-width: 768px) {
+    .button-53 {
+      padding: .75rem 3rem;
+      font-size: 1.25rem;
+    }
+  }
+
+
+
+  /*  skills section */
+
+ @keyframes animate{
+    100%{
+        transform: scaleX(1);
+    } 
+ }
+
+ .technical-bars .bar .progress-line span{
+    height: 100%;
+    background-color: #0ef;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s cubic-bezier(1,0,0,5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+ }
+
+ .progress-line.html span{
+    width: 90%;
+ }
+
+ .progress-line.css span{
+    width: 90%;
+ }
+ .progress-line.javascript span{
+    width: 90%;
+ }
+ .progress-line.c span{
+    width: 90%;
+ }
+ .progress-line.python span{
+    width: 90%;
+ }

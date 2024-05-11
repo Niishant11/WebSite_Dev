@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color:rgb(255, 255, 255);
+}
+
+
+/* Nav logo */
+
+.nav-logo {
+    font-size: 2.2rem;
+    color: aliceblue;
+    font-weight: bold;
+    color: aquamarine;
+    text-shadow: 0 0 10px rgb(15, 155, 108) ;
+    background: transparent;
+    transition: 0.2s;
+    cursor: default;
+    opacity: 0;
+    animation: slideright 1s ease forwards;
+
+}
+
+.nav-logo:hover{
+    text-shadow: 0 0 50px rgb(0, 17, 255);
+}
+
+/* Nav optins */
+.navigation-bar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+     background-color: rgba(0, 0, 0, 0.384);  
+    
+
+
+}
+
+.nav-option ul {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-option ul li {
+    list-style: none;
+    margin: 0 23px;
+    color: aliceblue;
+}
+
+.nav-option ul li a {
+    text-decoration: none;
+    display: inline-block;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.6s;
+    opacity: 0;
+    animation: slidedown 0.5s ease forwards;
+
+}
+
+    
+
+
+ .nav-option ul li a:hover {
+
+    color: brown;
+    text-shadow: 0 0 20px burlywood;
+    transition: 0.2s;
+    
+}
+
+
+
+/* First Section - Webpage ki window */
+
+.firstsec {
+    background-image: url('img/Background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 25vh;
+
+}
+
+
+.firstsec div div {
+    margin-top: 0px 0px 20px 0px;
+}
+
+.leftsec {
+    margin-top: 10rem;
+    font-size: 3.2rem;
+    color: aliceblue;
+    margin-right: 2rem;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 0.5s;
+
+
+}
+
+
+.rightsec img {
+    width: 400px;
+    height: 400px;
+    margin-top: 0rem;
+}
+
+.name {
+    color: aquamarine;
+}
+
+#element {
+    color: aquamarine;
+}
+
+
+/*___________________________________________________________________________________*/
+
+/* About */
+
+.about{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+.about-img img{
+padding: 10px;
+margin-left: 20%;
+max-width: 400px;
+height: auto;
+width: 100%;
+border-radius: 8px;
+}
+
+h2{
+    font-size: 60Px;
+    margin-top: 5%;
+    text-align: center;
+    justify-content: center;
+}
+
+h2 span{
+    color: aquamarine;
+}
+
+.about-text h2{
+    font-size: 60Px;
+    margin-top: 5%;
+    font-size: 60Px;
+    margin-top: 5%;
+    text-align: left;
+    justify-content: left;
+}
+
+.about-text h4{
+    justify-content: center;
+    align-items: center;
+    font-size: 29px;
+    font-weight: 500;
+    line-height: 1;
+    margin: 15px 0 30px;
+}
+
+.about-text p{
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+
+/* btn  */
+.btn-box {
+  background-color: aquamarine;
+  border: 0 solid #E5E7EB;
+  box-sizing: border-box;
+  color: #000000;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: .7rem 1rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  width: 100%;
+  max-width: 200px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn-box:focus {
+  outline: 0;
+}
+
+.btn-box:after {
+  content: '';
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.btn-box:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+
+/*________________________________________________________________________*/
+/* Skills Section */
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container1{
+    width: 600px;
+    height: 500px;
+    padding: 75px 90px;
+    margin-left: 120px;
+
+}
+
+/* .heading1{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+    border-color: #000000;
+} */
+
+.bar{
+    font-size: 23px;
+}
+
+.technical-bars .bar{
+    margin-top: 40px 0;
+}
+
+.technical-bars .bar:last-child{
+    margin-top: 0;
+}
+
+.technical-bars .bar .info{
+    margin-bottom: 5px ;
+}
+
+.technical-bars .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    animation: showtext 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+.technical-bars .bar .progress-line{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #000000;
+    animation: animate 1s cubic-bezier(1,0,0,5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+
+}
